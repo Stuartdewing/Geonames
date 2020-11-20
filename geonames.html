@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geonames App</title>
+	<link rel="stylesheet" type="text/css" href="geonames_style.css">
+<!-- CSS Bootstrap ---------------------------- -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<!-- jQuery ---------------------------- -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+</head>
+
+<body>
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-3">API name</div>
+		  	<div class="col-md-6">API description</div>
+		  	<div class="col-md-3">.col-md-1</div>		  
+		</div>
+<!-- Ocean ---------------------------- -->			
+		<div class="row">
+		 	<div class="col-md-3">Ocean</div>
+		  	<div id="hello" class="col-md-6">returns the ocean or sea for the given lat/lng</div>
+		  	<div class="col-md-3">
+		  		<input id="buttonone" class="btn btn-default btn-md" type="submit" value="Submit">
+		  	</div>
+		</div>
+<!-- Nearby Place ---------------------------- -->			
+		<div class="row">
+		  	<div class="col-md-3">Nearby Places</div>
+		  	<div class="col-md-6"> Returns the closest populated place for the lat/lng</div>
+		  	<div class="col-md-3">
+		  		<input id="buttontwo" class="btn btn-default" type="submit" value="Submit">
+		  	</div>
+		</div>
+<!-- City ---------------------------- -->			
+		<div class="row">
+		  	<div class="col-md-3">City</div>
+		  	<div class="col-md-6">Returns the nearest city to lat/lng</div>
+		  	<div class="col-md-3">
+		  		<input id="buttonthree" class="btn btn-default" type="submit" value="Submit">
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="col-md-12">Results</div>
+		</div>
+<!-- Results ---------------------------- -->
+		<div class="row">
+		  	<div class="col-md-3" id="resultsname"></div>
+		  	<div class="col-md-3" id="resultsvaluename"></div>
+		  	<div class="col-md-6" id="resultsvalue"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="geonames_app.js"></script>
+<!-- CSS Bootstrap ---------------------------- -->	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
