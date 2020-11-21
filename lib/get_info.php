@@ -1,5 +1,5 @@
 <?php
-	$url='api.geonames.org/oceanJSON?lat=0.1278&lng=51.5074&username=stuartdewing';
+	$url='api.geonames.org/oceanJSON?lat=' . $_REQUEST['lat'] . '&lng=' . $_REQUEST['lng'] . '&username=stuartdewing';
 
 	// cURL - 1) - Create cURL resource
 	$curl = curl_init();

@@ -15,13 +15,29 @@
 <body>
 	<div class="container">	
 		<div class="row">
-			<div class="col-md-3">API name</div>
-		  	<div class="col-md-6">API description</div>
-		  	<div class="col-md-3">.col-md-1</div>		  
+			<div class="col-md-3">
+				<h1>API name</h1>
+			</div>
+		  	<div class="col-md-6">
+		  		<h1>API description</h1>
+		  	</div>
+		  	<div class="col-md-3"></div>	  
 		</div>
 <!-- Ocean ---------------------------- -->			
 		<div class="row">
-		 	<div class="col-md-3">Ocean</div>
+		 	<div class="col-md-3">
+		 		<h2>Ocean</h2>
+       			<select id="oceanlat">
+       				<option value="">Latitude</option>
+					<option value="33.1376">33.1376</option>
+					<option value="15.326572">15.326572</option>
+				</select>
+				<select id="oceanlng">
+					<option value="">Longitude</option>
+					<option value="124.5085">124.5085</option>
+					<option value="-76.157227">-76.157227</option>
+				</select>
+		 	</div>
 		  	<div id="hello" class="col-md-6">returns the ocean or sea for the given lat/lng</div>
 		  	<div class="col-md-3">
 		  		<input id="buttonone" class="btn btn-default btn-md" type="submit" value="Submit">
@@ -29,7 +45,19 @@
 		</div>
 <!-- Nearby Place ---------------------------- -->			
 		<div class="row">
-		  	<div class="col-md-3">Nearby Places</div>
+		  	<div class="col-md-3">
+		  		<h2>Nearby Place</h2>
+       			<select id="nearlat">
+       				<option value="">Latitude</option>
+					<option value="50.8198">50.8198</option>
+					<option value="51.4545">51.4545</option>
+				</select>
+				<select id="nearlng">
+					<option value="">Longitude</option>
+					<option value="1.0880">1.0880</option>
+					<option value="2.5879">2.5879</option>
+				</select>
+		  	</div>
 		  	<div class="col-md-6"> Returns the closest populated place for the lat/lng</div>
 		  	<div class="col-md-3">
 		  		<input id="buttontwo" class="btn btn-default" type="submit" value="Submit">
@@ -37,17 +65,31 @@
 		</div>
 <!-- City ---------------------------- -->			
 		<div class="row">
-		  	<div class="col-md-3">City</div>
+		  	<div class="col-md-3">
+		  	<h2>City</h2>
+       			<select id="citylat">
+       				<option value="">Latitude</option>
+					<option value="40.78343">40.78343</option>
+					<option value="41.8781">41.8781</option>
+				</select>
+				<select id="citylng">
+					<option value="">Longitude</option>
+					<option value="-73.96625">-73.96625</option>
+					<option value="-87.6298">-87.6298</option>
+				</select>	
+			</div>
 		  	<div class="col-md-6">Returns the nearest city to lat/lng</div>
 		  	<div class="col-md-3">
 		  		<input id="buttonthree" class="btn btn-default" type="submit" value="Submit">
 		  	</div>
 		</div>
-		<div class="row">
-		  	<div class="col-md-12">Results</div>
-		</div>
 <!-- Results ---------------------------- -->
 		<div class="row">
+		  	<div class="col-md-12">
+		  		<h3>Results</h3>
+		  	</div>
+		</div>
+		<div  class="row">
 		  	<div class="col-md-3" id="resultsname"></div>
 		  	<div class="col-md-3" id="resultsvaluename"></div>
 		  	<div class="col-md-6" id="resultsvalue"></div>

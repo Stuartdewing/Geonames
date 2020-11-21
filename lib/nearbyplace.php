@@ -1,5 +1,5 @@
 <?php
-	$url='http://api.geonames.org/findNearbyPlaceNameJSON?lat=51.5074&lng=0.2178&username=stuartdewing';
+	$url='http://api.geonames.org/findNearbyPlaceNameJSON?lat=' . $_REQUEST['lat']. '&lng=' .$_REQUEST['lng']. '&username=stuartdewing';
 
 	// cURL - 1) - Create cURL resource
 	$curl = curl_init();
